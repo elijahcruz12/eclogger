@@ -10,7 +10,7 @@
  * ECLogger is an error logger. Log all your errors, warnings, and more in one, or multiple files, at once.
  */
 
-namespace elijahcruz\eclogger;
+namespace elijahcruz12\eclogger;
 
 
 //If you want to log to just one file
@@ -104,8 +104,8 @@ class ecMultiLog {
         }
 
     }
-    //TODO: Add functions to insert log entrys into each file.
-    function newLog($type, $error) {
+    //TODO: Make it possible to use the fallback file for select types.
+    function newLog($type, $status) {
         if($type == 'debug'){
             fwrite($this->debuglog, date(DATE_ATOM) . ' DEBUG: ' . $status . PHP_EOL);
         }
