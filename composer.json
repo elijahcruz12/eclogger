@@ -9,6 +9,11 @@
             "email": "elijah@itselijah.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "elijahcruz12\\eclogger\\": ""
+        }
+    },
     "require": {
         "php": "^7.0"
     }
